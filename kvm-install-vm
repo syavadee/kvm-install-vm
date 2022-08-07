@@ -88,7 +88,7 @@ function usage_subcommand ()
             printf "    ubuntu1604      Ubuntu 16.04 LTS (Xenial Xerus)     ubuntu\n"
             printf "    ubuntu1804      Ubuntu 18.04 LTS (Bionic Beaver)    ubuntu\n"
             printf "    ubuntu2004      Ubuntu 20.04 LTS (Focal Fossa)      ubuntu\n"
-            printf "    rocky8.5         Rocky Linux                         rocky\n"
+            printf "    rocky86         Rocky Linux                         rocky\n"
 	    printf "\n"
             printf "EXAMPLES\n"
             printf "    $prog create foo\n"
@@ -447,11 +447,11 @@ function fetch_images ()
             DISK_FORMAT=qcow2
             LOGIN_USER=opensuse
             ;;
-	 rocky85)
-            QCOW=Rocky-8-GenericCloud-8.5-20211114.2.x86_64.qcow2
+	 rocky86)
+            QCOW=Rocky-8-GenericCloud.latest.x86_64.qcow2
             OS_TYPE="linux"
-            OS_VARIANT="rocky8.5"
-            IMAGE_URL=https://dl.rockylinux.org/pub/rocky/8.5/images
+            OS_VARIANT="rocky8.6"
+            IMAGE_URL=http://download.rockylinux.org/pub/rocky/8.6/images
             DISK_FORMAT=qcow2
             LOGIN_USER=rocky
             ;;
